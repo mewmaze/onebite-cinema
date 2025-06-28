@@ -1,0 +1,22 @@
+.container section {
+  margin-bottom: 100px;
+}
+
+.container h3 {
+  margin-top: 40px;
+}
+
+.now_recommend_movie {
+  display: flex;
+  gap: 4px;
+}
+
+.all_movie {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.all_movie > * {
+  flex: 0 0 calc((100% - 4px * 4) / 5);
+}

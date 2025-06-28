@@ -1,0 +1,9 @@
+.container {
+  display: flex;
+  gap: 4px;
+  flex-wrap: wrap;
+}
+
+.container > * {
+  flex: 0 0 calc((100% - 4px * 2) / 3);
+}
