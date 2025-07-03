@@ -6,10 +6,10 @@ export default async function fetchOneMovie(
   const url = `http://localhost:12345/movie/${id}`;
   try {
     const response = await fetch(url);
-    if (!response) {
+    if (!response.ok) {
       throw new Error();
     }
-    return response.json();
+    return await response.json();
   } catch (err) {
     console.error(err);
     return null;
